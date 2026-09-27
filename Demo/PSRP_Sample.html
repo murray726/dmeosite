@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://psrp-vitality-card-week8-monday.tim-0721.chatgpt.site/#home -->
+<html lang="zh-Hant"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101c35">
+  <meta name="description" content="第XXX週週XXX PSRP 活力卡：XXX主題文字XXX">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101c35'/%3E%3Cpath d='M16 40c8-18 24-18 32 0M23 39c3-9 15-9 18 0' fill='none' stroke='%23e9ad49' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='22' r='7' fill='%2355d9da'/%3E%3C/svg%3E">
+  <title>PSRP 活力卡｜第XXX週・週XXX</title>
+  <style>
+    :root{--navy:#101c35;--navy2:#182746;--paper:#fffaf1;--ink:#23304a;--muted:#718096;--gold:#e9ad49;--coral:#ee7058;--cyan:#55d9da;--line:#e9e1d4;--green:#3f9b77}
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;background:radial-gradient(circle at 50% 5%,#33496f 0,#18243d 35%,#090f1d 100%);color:var(--ink)}
+    body{display:grid;place-items:center;padding:24px}
+    button{font:inherit}
+    .phone{width:min(100%,430px);height:min(900px,calc(100vh - 32px));min-height:700px;border:8px solid #0a0d14;border-radius:52px;background:var(--paper);box-shadow:0 30px 90px #0008,0 0 0 1px #ffffff25 inset;overflow:hidden;position:relative}
+    .status{height:50px;padding:12px 25px 0;display:flex;align-items:flex-start;justify-content:space-between;background:var(--navy);color:#fff;font-size:13px;font-weight:700;letter-spacing:.02em;position:relative}
+    .island{position:absolute;left:50%;top:9px;transform:translateX(-50%);width:118px;height:30px;border-radius:20px;background:#020305;box-shadow:0 1px 0 #ffffff12 inset}
+    .signals{display:flex;gap:6px;align-items:center}.battery{width:23px;height:11px;border:1.5px solid #fff;border-radius:3px;position:relative}.battery:before{content:"";position:absolute;inset:2px;background:#fff;border-radius:1px}.battery:after{content:"";position:absolute;right:-4px;top:3px;width:2px;height:5px;background:#fff;border-radius:0 2px 2px 0}
+    header{height:92px;padding:12px 22px 16px;background:linear-gradient(145deg,var(--navy),var(--navy2));color:#fff;display:flex;align-items:flex-end;justify-content:space-between}
+    .brand small{display:block;color:#ffd98f;font-size:12px;letter-spacing:.16em;margin-bottom:4px}.brand h1{font-family:"Noto Serif TC","PMingLiU",serif;font-size:25px;margin:0;letter-spacing:.04em}
+    .head-side{display:flex;align-items:center;gap:8px}.help-button{width:36px;height:36px;border:1px solid #ffffff38;border-radius:50%;background:#ffffff14;color:#fff;font-size:18px;font-weight:900;cursor:pointer}.help-button:active{transform:scale(.96)}.week{background:#ffffff14;border:1px solid #ffffff2b;border-radius:16px;padding:8px 10px;text-align:right}.week b{display:block;font-size:13px}.week span{font-size:11px;color:#c9d5e9}
+    main{height:calc(100% - 222px);overflow:auto;padding:20px 18px 28px;scroll-behavior:smooth}.screen{display:none}.screen.active{display:block;animation:rise .28s ease-out}@keyframes rise{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}
+    .hero{background:linear-gradient(135deg,#fff2d5,#ffe8d8);border:1px solid #f4d3ab;border-radius:26px;padding:20px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;right:-45px;top:-55px;background:radial-gradient(circle,#ffd46e 0 18%,#f7a759 19% 31%,transparent 32%);opacity:.65}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.13em;color:#a05b35}.hero h2{font-family:"Noto Serif TC","PMingLiU",serif;font-size:27px;line-height:1.35;margin:8px 0}.hero p{font-size:15px;line-height:1.7;margin:0;color:#5c5360}
+    .quote{margin:18px 4px 14px;padding-left:14px;border-left:3px solid var(--gold);font-family:"Noto Serif TC","PMingLiU",serif;font-weight:700;font-size:17px;line-height:1.65;color:#28344c}
+    .progress{display:flex;gap:8px;margin:18px 0}.pip{height:7px;flex:1;border-radius:10px;background:#e7dfd4}.pip.done{background:var(--green)}.pip.current{background:var(--gold)}
+    .card-list{display:grid;gap:10px}.card-jump{width:100%;border:1px solid var(--line);background:#fff;border-radius:18px;padding:14px;text-align:left;display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;color:var(--ink);cursor:pointer;box-shadow:0 4px 16px #17233c0a}.card-jump:active{transform:scale(.985)}.icon{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;font-size:20px;background:#eef4fb}.card-jump b{display:block;font-size:15px;margin-bottom:3px}.card-jump small{color:var(--muted);font-size:12px}.chev{font-size:22px;color:#a1abba}
+    .section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.section-title div{display:flex;align-items:center;gap:10px}.section-title .num{width:35px;height:35px;border-radius:12px;display:grid;place-items:center;background:var(--cyan);font-weight:900}.section-title h2{font-size:20px;margin:0}.duration{font-size:12px;color:#7a8496;background:#edf0f4;padding:6px 9px;border-radius:20px}
+    .content-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 8px 24px #13213e0b;margin-bottom:12px}.label{font-size:12px;font-weight:900;letter-spacing:.08em;color:#995e3d;margin-bottom:8px}.content-card p{font-size:16px;line-height:1.82;margin:0}.content-card p+p{margin-top:10px}.em{color:#d64d39;font-weight:800}.scripture{font-family:"Noto Serif TC","PMingLiU",serif;font-size:17px!important;border-left:3px solid var(--gold);padding-left:12px}.gold-card{background:linear-gradient(145deg,#fff7df,#fff);border-color:#eed7a3}.nav-row{display:grid;grid-template-columns:1fr 1.6fr;gap:10px;margin-top:16px}.btn{border:0;border-radius:16px;min-height:50px;padding:12px 15px;font-weight:800;cursor:pointer}.btn.secondary{background:#e9edf3;color:#34415b}.btn.primary{background:var(--navy);color:#fff;box-shadow:0 8px 18px #101c3533}.btn.complete{background:var(--green);color:#fff}
+    .practice{display:grid;gap:10px}.practice-item{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px}.practice-item input{width:22px;height:22px;accent-color:var(--green);flex:none}.practice-item b{display:block;font-size:15px}.practice-item span{display:block;font-size:13px;color:#677386;line-height:1.55;margin-top:3px}.notice{margin-top:14px;padding:14px;border-radius:17px;background:#edf8f4;color:#286d57;font-size:14px;line-height:1.6;display:none}.notice.show{display:block}
+    .guide-link{width:100%;margin:0 0 14px;border:1px solid #dce7ef;background:#f4f9fc;color:#34415b;border-radius:16px;padding:11px 14px;display:flex;align-items:center;justify-content:space-between;font-weight:800;cursor:pointer}.guide-link small{font-weight:500;color:#718096}.guide-intro{background:linear-gradient(145deg,#13213e,#233858);color:#fff;border:0}.guide-intro .label{color:#ffd98f}.guide-intro p{color:#edf4ff}.psrp{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:12px 0 18px}.psrp span{background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 4px;text-align:center;font-size:12px;color:#657086}.psrp b{display:block;color:var(--navy);font-size:18px;margin-bottom:2px}.guide-section{background:#fff;border:1px solid var(--line);border-radius:18px;margin-bottom:10px;overflow:hidden}.guide-section summary{list-style:none;padding:15px 16px;font-size:15px;font-weight:900;cursor:pointer;display:flex;align-items:center;gap:10px}.guide-section summary::-webkit-details-marker{display:none}.guide-section summary:after{content:'＋';margin-left:auto;color:#8b95a5}.guide-section[open] summary:after{content:'－'}.guide-body{padding:0 16px 16px;color:#526077;font-size:15px;line-height:1.75}.guide-body p{margin:0 0 9px}.guide-body p:last-child{margin-bottom:0}.guide-body strong{color:var(--ink)}.guide-call{color:#cf4f3c!important;font-weight:900}
+    nav{height:80px;border-top:1px solid #e8e1d5;background:#fffdfa;display:grid;grid-template-columns:repeat(5,1fr);padding:8px 8px max(8px,env(safe-area-inset-bottom))}.tab{border:0;background:none;color:#8a94a5;border-radius:14px;display:flex;flex-direction:column;gap:3px;align-items:center;justify-content:center;font-size:11px;cursor:pointer}.tab i{font-style:normal;font-size:20px;line-height:1}.tab.active{color:var(--navy);font-weight:900;background:#f2eadc}
+    @media(max-width:520px){body{padding:0;background:var(--paper)}.phone{width:100%;height:100dvh;min-height:620px;border:0;border-radius:0}.status{padding-top:max(12px,env(safe-area-inset-top));height:calc(50px + env(safe-area-inset-top))}main{height:calc(100% - 222px - env(safe-area-inset-top))}}
+    @media(min-width:800px){.phone:before{content:"";position:absolute;right:-12px;top:150px;width:4px;height:80px;background:#080b11;border-radius:0 3px 3px 0}}
+  </style>
+<style id="kortex-button-styles">
+    @keyframes kortex-spin {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes kortex-shake {
+      0%, 100% { transform: translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+      20%, 40%, 60%, 80% { transform: translateX(4px); }
+    }
+  </style></head>
+<body>
+  <div class="phone" role="application" aria-label="PSRP 活力卡第XXX週週XXX">
+    <div class="status"><span id="clock">08:00</span><div class="island" aria-hidden="true"></div><div class="signals"><span>●●●</span><span>⌁</span><span class="battery"></span></div></div>
+    <header><div class="brand"><small>今日晨興</small><h1>PSRP 活力卡</h1></div><div class="head-side"><button class="help-button" data-go="guide" aria-label="開啟使用說明">?</button><div class="week"><b>第XXX週 · 週XXX</b><span>XXX標題XXX</span></div></div></header>
+    <main>
+      <section class="screen active" data-screen="home">
+        <div class="hero"><div class="eyebrow">今日重點</div><h2 style="font-size:22px">XXX重點的內容XXX</h2></div>
+        <button class="guide-link" data-go="guide"><span>第一次使用？先認識 PSRP 活力卡</span><small>約 1 分鐘 ›</small></button>
+        <div class="quote">「XXX主題文字XXX」</div>
+        <div class="progress" aria-label="今日進度"><span class="pip current done"></span><span class="pip done"></span><span class="pip done"></span><span class="pip done"></span></div>
+        <div class="card-list">
+          <button class="card-jump" data-go="read"><span class="icon">🕊️</span><span><b>卡片一 · 禱讀</b><small>開口宣讀 · 用靈禱讀 · 化為禱告</small></span><span class="chev">›</span></button>
+          <button class="card-jump" data-go="study"><span class="icon">📖</span><span><b>卡片二 · 研讀</b><small>真理亮光 · 生命經歷</small></span><span class="chev">›</span></button>
+          <button class="card-jump" data-go="recite"><span class="icon">💡</span><span><b>卡片三 · 背誦</b><small>綱要金句 · 背誦三口訣</small></span><span class="chev">›</span></button>
+          <button class="card-jump" data-go="speak"><span class="icon">🔥</span><span><b>卡片四 · 講說</b><small>摸著 · 經歷 · 宣告 · 操練</small></span><span class="chev">›</span></button>
+        </div>
+      </section>
+
+      <section class="screen" data-screen="guide">
+        <div class="section-title"><div><span class="num">?</span><h2>PSRP 活力卡使用說明</h2></div><button class="btn secondary" data-go="home" style="min-height:36px;padding:7px 11px">返回</button></div>
+        <div class="content-card guide-intro"><div class="label">五分鐘開啟屬靈享受</div><p>活力卡不是額外的功課，也不取代《晨興聖言》；它是一份「屬靈開胃菜」，幫助我們快速開口、運用靈、把心打開，再進入完整的晨興享受。</p></div>
+        <div class="psrp" aria-label="PSRP 四步驟"><span><b>P</b>禱讀<br>2 分鐘</span><span><b>S</b>研讀<br>1 分鐘</span><span><b>R</b>背誦<br>1 分鐘</span><span><b>P</b>講說<br>1 分鐘</span></div>
+
+        <details class="guide-section" open=""><summary><span>🌅</span>一、從例行晨興到靈裏享受</summary><div class="guide-body"><p>有時我們渴慕晨興，卻因時間緊迫、文字較深而摸不著靈。晨興的關鍵不只在「讀了多少字」，更在於<strong>靈有沒有被點活，有沒有享受到基督</strong>。</p><p>每天用短短五分鐘，為享用《晨興聖言》的豐富筵席，預備最佳的屬靈胃口。</p></div></details>
+
+        <details class="guide-section"><summary><span>🍽️</span>二、開胃菜與主餐相輔相成</summary><div class="guide-body"><p><strong>PSRP 活力卡：</strong>五分鐘點活靈、開啟口、抓住當天負擔與真理重點。</p><p><strong>《晨興聖言》：</strong>深入職事信息，吸取基督，讓真理構成並浸透我們。</p><p>先用活力卡將靈打開，再進入《晨興聖言》，幫助我們從「死沉硬讀」轉為「靈裏享受」。</p></div></details>
+
+        <details class="guide-section"><summary><span>🕊️</span>三、PSRP 五分鐘操練</summary><div class="guide-body"><p><strong>P · Pray-read 禱讀（2 分鐘）：</strong>開口宣讀，用靈禱讀，將主的話化為禱告。</p><p><strong>S · Study 研讀（1 分鐘）：</strong>抓住真理亮光與生命經歷。</p><p><strong>R · Recite 背誦（1 分鐘）：</strong>反覆背誦綱要金句與三口訣，使主的話成為應時的供給。</p><p><strong>P · Prophesy 講說（1 分鐘）：</strong>用「我摸著、我經歷、我宣告、我操練」將享受口語化申言出來。</p></div></details>
+
+        <details class="guide-section"><summary><span>👥</span>四、按生命程度分層餧養</summary><div class="guide-body"><p><strong>新人／小羊：</strong>禱讀＋背誦金句＋申言應用，輕鬆入門。</p><p><strong>活力伴／小排：</strong>禱讀＋背誦金句＋申言，彼此講說、彼此激勵。</p><p><strong>老練／服事者：</strong>禱讀＋研讀真理，再按當天《晨興聖言》的享受自由申言與應用。</p><p>適合個人或 2–3 位活力伴，線上、實體皆可，約 5–10 分鐘完成。</p></div></details>
+
+        <details class="guide-section"><summary><span>🔥</span>五、從操練走向關係與復興</summary><div class="guide-body"><p>不要只把卡片丟在群組中。可透過電話或 LINE，一對一與人同禱讀、同分享、同禱告。</p><p class="guide-call">用享受帶動享受，用生命感染生命！</p><p><strong>宣告：</strong>人人得復興｜天天有活力｜排排同事奉</p><p><strong>呼召：</strong>弟兄姊妹，讓我們每天先用五分鐘點活我們的靈，再進入《晨興聖言》，享受包羅萬有、追測不盡的基督，帶進召會生機的建造與新的復興！</p></div></details>
+
+        <button class="btn primary" data-go="read" style="width:100%;margin-top:6px">開始今天的 PSRP 操練</button>
+      </section>
+<!-- ========= 第二頁禱讀區塊-開頭 ========= -->
+      <section class="screen" data-screen="read">
+        <div class="section-title"><div><span class="num">一</span><h2>禱讀</h2></div><span class="duration">約 2 分鐘</span></div>
+        <div class="content-card"><div class="label">開口宣讀 · XXX經節XXX 例：馬太福音十六章 16 節</div><p class="scripture">「XXX經節內容XXX」</p></div>
+        <div class="content-card"><div class="label">開口宣讀 · XXX經節XXX</div><p class="scripture">「XXX經節內容XXX」</p></div>
+        <div class="content-card gold-card"><div class="label">用靈禱讀</div><p>XXX宣讀經節內容XXX<span class="em">基督</span></p>
+        </div>
+        <div class="content-card"><div class="label">化為禱告</div><p>XXX禱告經節內容XXX</p>
+        </div>
+        <div class="nav-row"><button class="btn secondary" data-prev="home">返回</button><button class="btn primary" data-next="study">完成禱讀，下一張</button></div>
+      </section>
+<!-- =========第二頁禱讀區塊-結尾 ========= -->
+<!-- ========= 第三頁研讀區塊-開頭 ========= -->
+      <section class="screen" data-screen="study">
+        <div class="section-title"><div><span class="num">二</span><h2>研讀</h2></div><span class="duration">約 1 分鐘</span></div>
+        <div class="content-card"><div class="label">真理亮光 · 可選項</div>
+        <p><b>一、XXX標題XXX：</b>XXX文字內容XXX。</p>
+        <p><b>二、XXX標題XXX：</b>XXX文字內容XXX。</p>
+        <p><b>三、XXX標題XXX：</b>XXX文字內容XXX。</p>
+      </div>
+        <div class="content-card gold-card"><div class="label">生命經歷</div><p>XXX生命經歷文字內容XXX。</p></div>
+        <div class="nav-row"><button class="btn secondary" data-prev="read">上一張</button><button class="btn primary" data-next="recite">完成研讀，下一張</button></div>
+      </section>
+<!-- =========第三頁研讀區塊-結尾 ========= -->
+<!-- ========= 第四頁背誦區塊-開頭 ========= -->
+      <section class="screen" data-screen="recite">
+        <div class="section-title"><div><span class="num">三</span><h2>背誦</h2></div><span class="duration">約 1 分鐘</span></div>
+        <div class="content-card gold-card"><div class="label">綱要金句</div><p class="scripture">「XXX綱要金句文字內容XXX」</p></div>
+        <div class="content-card"><div class="label">背誦三口訣</div><p><span class="em">XXX口訣內容XXX</span></p><p><span class="em">XXX口訣內容XXX</span></p><p><span class="em">XXX口訣內容XXX</span></p></div>
+        <div class="nav-row"><button class="btn secondary" data-prev="study">上一張</button><button class="btn primary" data-next="speak">完成背誦，下一張</button></div>
+      </section>
+<!-- =========第四頁背誦區塊-結尾 ========= -->
+<!-- ========= 第五頁講說區塊-開頭 ========= -->
+      <section class="screen" data-screen="speak">
+        <div class="section-title"><div><span class="num">四</span><h2>講說</h2></div><span class="duration">約 1 分鐘</span></div>
+        <div class="content-card"><div class="label">我摸著</div><p>XXX摸著內容XXX</p></div>
+        <div class="content-card"><div class="label">我經歷</div><p>XXX經歷內容XXX</p></div>
+        <div class="content-card gold-card"><div class="label">我宣告</div><p>XXX宣告內容XXX</p></div>
+        <div class="label" style="margin:18px 4px 8px">今日操練</div>
+        <div class="practice">
+          <label class="practice-item"><input type="checkbox" data-practice="gospel">
+            <span><b>XXX操練項目1XXX</b><span>XXX操練內容XXX</span></span>
+          </label>
+          <label class="practice-item"><input type="checkbox" data-practice="shepherd">
+            <span><b>XXX操練項目2XXX</b><span>XXX操練內容XXX</span></span>
+          </label>
+        </div>
+        <button class="btn primary" id="finish" style="width:100%;margin-top:16px">完成今日活力卡</button>
+        <div class="notice" id="doneMessage">今日操練已完成。XXX完成結語內容XXX</div>
+        <div class="nav-row"><button class="btn secondary" data-prev="recite">上一張</button><button class="btn secondary" data-go="home">回到首頁</button></div>
+      </section>
+<!-- =========第五頁講說區塊-結尾 ========= -->
+    </main>
+    <nav aria-label="主要導覽">
+      <button class="tab active" data-go="home"><i>☀️</i><span>今日</span></button>
+      <button class="tab" data-go="read"><i>🕊️</i><span>禱讀</span></button>
+      <button class="tab" data-go="study"><i>📖</i><span>研讀</span></button>
+      <button class="tab" data-go="recite"><i>💡</i><span>背誦</span></button>
+      <button class="tab" data-go="speak"><i>🔥</i><span>講說</span></button>
+    </nav>
+  </div>
+  <script>
+    const order=['home','read','study','recite','speak'];
+    const screens=[...order,'guide'];
+    const dateKey=new Date().toISOString().slice(0,10);
+    const storeKey='psrp-vitality-week8-monday-'+dateKey;
+    let state=JSON.parse(localStorage.getItem(storeKey)||'{"step":0,"practice":{}}');
+    function save(){localStorage.setItem(storeKey,JSON.stringify(state))}
+    function updateProgress(){document.querySelectorAll('.pip').forEach((pip,index)=>{pip.classList.toggle('done',index<state.step||state.completed);pip.classList.toggle('current',index===state.step&&!state.completed)})}
+    function show(name){
+      document.querySelectorAll('.screen').forEach(el=>el.classList.toggle('active',el.dataset.screen===name));
+      document.querySelectorAll('.tab').forEach(el=>el.classList.toggle('active',el.dataset.go===name));
+      document.querySelector('main').scrollTop=0;
+      history.replaceState(null,'','#'+name);
+      updateProgress();
+    }
+    document.addEventListener('click',e=>{
+      const go=e.target.closest('[data-go]'); if(go) show(go.dataset.go);
+      const next=e.target.closest('[data-next]'); if(next){state.step=Math.max(state.step,order.indexOf(next.dataset.next)-1);save();show(next.dataset.next)}
+      const prev=e.target.closest('[data-prev]'); if(prev) show(prev.dataset.prev);
+    });
+    document.querySelectorAll('[data-practice]').forEach(box=>{box.checked=!!state.practice[box.dataset.practice];box.addEventListener('change',()=>{state.practice[box.dataset.practice]=box.checked;save()})});
+    document.getElementById('finish').addEventListener('click',()=>{state.step=4;state.completed=true;save();updateProgress();document.getElementById('doneMessage').classList.add('show');document.getElementById('finish').textContent='今日已完成 ✓';document.getElementById('finish').classList.add('complete')});
+    if(state.completed){document.getElementById('doneMessage').classList.add('show');document.getElementById('finish').textContent='今日已完成 ✓';document.getElementById('finish').classList.add('complete')}
+    const now=new Date();document.getElementById('clock').textContent=now.toLocaleTimeString('zh-TW',{hour:'2-digit',minute:'2-digit',hour12:false});
+    show(location.hash.slice(1)&&screens.includes(location.hash.slice(1))?location.hash.slice(1):'home');
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4184dbcac94fac4',t:'MTc5MDQ4ODk5MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;" src="./PSRP_Sample_files/saved_resource.html"></iframe>
+
+</body></html>
